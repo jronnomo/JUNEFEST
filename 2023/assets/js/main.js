@@ -4,22 +4,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-function inputCarouselmages(){
-	fetch('https://api.imagekit.io/v1/files/?name=IMG_0033.JPG&tr=w-288,h-200', {
-		headers: {'Authorization': `Basic private_GrOyuLAwm73AxBRp0SXDIxRe+Gs=`,
-				  'Access-Control-Allow-Origin': 'http://localhost:3000',
-				  'Access-Control-Allow-Credentials': 'true'}
-	  })
-	.then(res => res.json())
-	.then(data => {
-		console.log(data)
-	})
-	.catch(err => {
-		console.log(`Error is ${err}`)
-	})
-}
-
-inputCarouselmages()
 
 (function($) {
 
