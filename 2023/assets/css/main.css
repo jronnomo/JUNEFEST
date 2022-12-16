@@ -2176,7 +2176,7 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background-image: url("../../images/leaves.jpg");
+		background-image: url("../../images/leaves-small.jpg");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -2203,6 +2203,15 @@ input, select, textarea {
 
 		#header header {
 			display: inline-block;
+		}
+		.countdown{
+			text-align: center;
+			width: 100%;
+		}
+		.countdown > *{
+			width: 15%;
+			display: inline;
+			color: #0c4f00
 		}
 
 			#header header > p {
