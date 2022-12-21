@@ -3,19 +3,19 @@ function inputCarouselmages(){
         method: 'GET',
 		mode: 'cors',
 		headers: {'Authorization': `Basic cHJpdmF0ZV9Hck95dUxBd203M0F4QlJwMFNYREl4UmUrR3M9Og==`,
-				  'Access-Control-Allow-Origin': '10.0.0.58:80',
+				  'Access-Control-Allow-Origin': 'https://127.0.0.1:5500/',
 				  'Access-Control-Request-Method': 'GET',
 				  'Access-Control-Allow-Credentials': 'true'},
 	  })
 	.then(res => res.json())
 	.then(data => {
 		console.log(data)
+		document.querySelector('#firstPic').src = data.url
 	})
 	.catch(err => {
 		console.log(`Error is ${err}`)
 	})
 }
-
 inputCarouselmages()
 
 let juneFestDate = new Date('June 17, 2023 00:00:00').getTime()
