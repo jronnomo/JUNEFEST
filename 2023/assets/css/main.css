@@ -265,11 +265,11 @@ svg{
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-section.featured{
-	padding: 0 8%;
-}
+/* section.featured{
+	padding: 0 ;
+} */
 section.featured p{
-	display: inline-flex;
+	display: inline;
 }
 section.featured > .image{
 	width: 300px;
