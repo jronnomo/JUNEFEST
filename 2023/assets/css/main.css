@@ -25,6 +25,7 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -3111,12 +3112,14 @@ image#Courthaus{
 				#header h1 {
 					font-size: 1.75em;
 				}
-
+			
 				#header hr {
 					top: 1em;
 					margin-bottom: 2.5em;
 				}
-
+				#header img{
+					width: 75%;
+				}
 			body.homepage #header {
 				min-height: 0;
 				padding: 5.5em 0 5em 0;
@@ -3169,13 +3172,13 @@ image#Courthaus{
 			}
 
 				.carousel .reel {
-					padding: 0 0.5em 0 0.5em;
+					padding: 0 0.5em 1em 0.5em;
 				}
 
 				.carousel article {
 					width: 14em;
-					padding-bottom: 2em;
-					margin: 0 0.5em 0 0;
+					padding: 0;
+					margin: 0 0.75em;
 				}
 
 					.carousel article .image {
