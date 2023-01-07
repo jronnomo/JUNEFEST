@@ -17,39 +17,29 @@
 // 	})
 // }
 // inputCarouselmages()
-const privateApiKey = 'private_GrOyuLAwm73AxBRp0SXDIxRe+Gs=';
-const encodedKey = btoa(privateApiKey + ':');
 
-const API_URL = 'https://api.imagekit.io/v1/files/?name=IMG_0033.JPG&tr=w-288,h-200';
-
-async function fetchImage() {
-	try {
-	  const response = await fetch(API_URL, {
-		method: 'GET',
-		headers: {
-		  Authorization: `Basic cHJpdmF0ZV9Hck95dUxBd203M0F4QlJwMFNYREl4UmUrR3M9Og==`,
-		  'Access-Control-Allow-Origin': 'https://main--sprightly-mermaid-bca16a.netlify.app/',
-		},
-	  });
-	  if (!response.ok) {
-		throw new Error(response.statusText);
-	  }
-	  const data = await response.json();
-	  const imageUrl = data.data[0].url;
+async function listAlbumItems() {
+	// Replace YOUR_ACCESS_TOKEN with your actual access token
+	const accessToken = 'YOUR_ACCESS_TOKEN';
   
-	  const imageElement = document.createElement('img');
-	  imageElement.src = imageUrl;
-	  document.body.appendChild(imageElement);
-	} catch (error) {
-	  console.error(error);
-	}
+	// Replace JUNEFEST_2021_ALBUM_ID with the actual ID of the "Junefest 2021" album
+	const albumId = 'AF1QipPMkuNb7AuIitDyZiN2eTYv_olOwQdcjE65013C';
+  
+	const response = await fetch(`https://photoslibrary.googleapis.com/v1/mediaItems?albumId=${albumId}`, {
+	  method: 'GET',
+	  headers: {
+		Authorization: `Bearer ${accessToken}`,
+	  },
+	});
+  
+	const data = await response.json();
+  
+	// Print the list of items in the "Junefest 2021" album
+	console.log(data.mediaItems);
   }
-  
-  fetchImage();
-  
-  
-  
-  
+
+
+	//  https://accounts.google.com/o/oauth2/auth?client_id=34035144929-p1eflfb0gqj88rlcj8rrkb4c4p9e4l8o.apps.googleusercontent.com&redirect_uri=https://main--sprightly-mermaid-bca16a.netlify.app&scope=https://www.googleapis.com/auth/photoslibrary&response_type=code
   
 
 // function testAPI(){

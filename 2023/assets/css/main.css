@@ -1537,6 +1537,9 @@ image#Courthaus{
 				box-sizing: border-box;
 				align-items: stretch;
 			}
+			.image img{
+				width: 50%;
+			}
 
 				.row > * {
 					box-sizing: border-box;
@@ -2445,13 +2448,19 @@ image#Courthaus{
 		font-family: 'Inika', sans-serif;
 		background: rgb(255, 255, 255);
 		text-align: center;
-		padding: 4.5em 0 4.5em 0;
+		padding: 4.5em;
 		margin-bottom: 0;
 	}
-
-		#banner header > p {
-			margin-bottom: 0;
-		}
+	#banner header > p {
+		margin-bottom: 0;
+	}
+	#banner img{
+		width: 100%;
+		padding: 5% 0 0 0 ;
+	}
+	#banner h1{
+		font-size: 2em;
+	}
 
 /* Content */
 
@@ -2627,7 +2636,7 @@ image#Courthaus{
 			width: 18em;
 			background: #fff;
 			text-align: center;
-			padding: 0 1em 3em 1em;
+			padding: 0 1em 0 1em;
 			margin: 0 2em 0 0;
 			white-space: normal;
 			opacity: 1.0;
@@ -2654,6 +2663,9 @@ image#Courthaus{
 				text-align: center;
 			}
 
+			.carouselImg{
+				width: 100%;
+			}
 /* Wide */
 
 	@media screen and (max-width: 1680px) {
@@ -2677,7 +2689,7 @@ image#Courthaus{
 
 				.carousel article {
 					width: 18em;
-					margin: 0 1.25em 0 0;
+					margin: 0 0 0 0;
 				}
 
 	}
