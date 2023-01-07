@@ -4,8 +4,8 @@ function inputCarouselmages(){
         method: 'GET',
 		mode: 'cors',
 		headers: {'Authorization': `Basic cHJpdmF0ZV9Hck95dUxBd203M0F4QlJwMFNYREl4UmUrR3M9Og==`,
-				  'Access-Control-Allow-Origin': 'https://127.0.0.1:5500',
-				  'Origin': 'https://127.0.0.1:5500',
+				  'Access-Control-Allow-Origin': 'https://63b8c3f0d6a7971908a721e5--sprightly-mermaid-bca16a.netlify.app/',
+				  'Origin': 'https://63b8c3f0d6a7971908a721e5--sprightly-mermaid-bca16a.netlify.app/',
 				  'Access-Control-Request-Method': 'GET',
 				  'Access-Control-Allow-Credentials': 'true'},
 	  })
