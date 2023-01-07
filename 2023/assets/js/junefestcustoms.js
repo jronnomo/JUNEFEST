@@ -25,7 +25,7 @@ async function fetchImage() {
 	  const response = await fetch(API_URL, {
 		method: 'GET',
 		headers: {
-		  Authorization: 'Basic private_GrOyuLAwm73AxBRp0SXDIxRe+Gs=',
+		  Authorization: 'Basic cHJpdmF0ZV9Hck95dUxBd203M0F4QlJwMFNYREl4UmUrR3M9Og==',
 		  'Access-Control-Allow-Origin': 'https://main--sprightly-mermaid-bca16a.netlify.app/',
 		},
 	  });
