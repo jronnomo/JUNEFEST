@@ -1,11 +1,9 @@
 //Photos from imagekit
 function inputCarouselmages(){
 	fetch('https://api.imagekit.io/v1/files/?name=IMG_0033.JPG&tr=w-288,h-200', {
-        method: 'GET',
-		mode: 'no-cors',
 		headers: {'Authorization': `Basic cHJpdmF0ZV9Hck95dUxBd203M0F4QlJwMFNYREl4UmUrR3M9Og==`,
-				  'Access-Control-Allow-Origin': 'https://63b8c3f0d6a7971908a721e5--sprightly-mermaid-bca16a.netlify.app/',
-				  'Origin': 'https://63b8c3f0d6a7971908a721e5--sprightly-mermaid-bca16a.netlify.app/',
+				  'Access-Control-Allow-Origin': 'https://main--sprightly-mermaid-bca16a.netlify.app/',
+				  'Origin': 'https://main--sprightly-mermaid-bca16a.netlify.app/',
 				  'Access-Control-Request-Method': 'GET',
 				  'Access-Control-Allow-Credentials': 'true'},
 	  })
