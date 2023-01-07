@@ -1,7 +1,7 @@
 //Photos from imagekit
 function inputCarouselmages(){
 	fetch('https://api.imagekit.io/v1/files/?name=IMG_0033.JPG&tr=w-288,h-200', {
-		headers: {'Authorization': `Basic cHJpdmF0ZV9Hck95dUxBd203M0F4QlJwMFNYREl4UmUrR3M9Og==`,
+		headers: {Authorization: `Basic cHJpdmF0ZV9Hck95dUxBd203M0F4QlJwMFNYREl4UmUrR3M9Og==`,
 				  'Access-Control-Allow-Origin': 'https://main--sprightly-mermaid-bca16a.netlify.app/',
 				  'Origin': 'https://main--sprightly-mermaid-bca16a.netlify.app/',
 				  'Access-Control-Request-Method': 'GET',
@@ -17,6 +17,38 @@ function inputCarouselmages(){
 	})
 }
 inputCarouselmages()
+
+// const API_URL = 'https://api.imagekit.io/v1/files/?name=IMG_0033.JPG&tr=w-288,h-200';
+
+// async function fetchImage() {
+// 	try {
+// 	  const response = await fetch(API_URL, {
+// 		method: 'GET',
+// 		headers: {
+// 		  Authorization: 'Basic private_GrOyuLAwm73AxBRp0SXDIxRe+Gs=',
+// 		  'Access-Control-Allow-Origin': 'https://main--sprightly-mermaid-bca16a.netlify.app/',
+// 		},
+// 	  });
+// 	  if (!response.ok) {
+// 		throw new Error(response.statusText);
+// 	  }
+// 	  const data = await response.json();
+// 	  const imageUrl = data.data[0].url;
+  
+// 	  const imageElement = document.createElement('img');
+// 	  imageElement.src = imageUrl;
+// 	  document.body.appendChild(imageElement);
+// 	} catch (error) {
+// 	  console.error(error);
+// 	}
+//   }
+  
+//   fetchImage();
+  
+  
+  
+  
+  
 
 // function testAPI(){
 // 	fetch('https://ttp.cbp.dhs.gov/schedulerapi/slots?orderBy=soonest&limit=1&locationId=5142&minimum=1&fbclid=IwAR3WRquU2i-p5PBfC62mxhILi_fbcBc8Mc1aea5g_4vTHs7j4S8YXpdGGYE')
