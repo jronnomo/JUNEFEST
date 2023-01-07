@@ -116,20 +116,23 @@
 			<!-- Main -->
 				<div id="barmap" class="wrapper style2">
 					<article id="main" class="container special">
-						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1330 812">
-							<image width="1330" height="812" xlink:href="images/barcrawlmap.PNG"></image>
-							<a xlink:href="https://www.courthaussocial.com/"><rect class="location Courthaus clearfix" x="1158" y="23" fill="#fff" opacity="0" width="155" height="50"></rect></a> 
-							<a xlink:href="https://www.thepinemoor.com/"><rect class="location" x="375" y="513" fill="#fff" opacity="0" width="113" height="50"></rect></a>
-							<a xlink:href="https://pamplonava.com/"><rect class="location" x="274" y="515" fill="#fff" opacity="0" width="85" height="50"></rect></a>
-							<a xlink:href="https://thelotva.com/"><rect class="location" x="44" y="736" fill="#fff" opacity="0" width="94" height="50"></rect></a>
-						</svg>
-						<image id="Courthaus" class="hidden" src="images/Courthaus.PNG"></image>
 						<header>
 							<h2><a href="#">The Trek Map</a></h2>
-							<!-- <p>Unfortunately, a little thing called COVID limited the 2020 sequel to an underwhelming virtual platform. However, as all great champions do, we came back better than ever in 2021 and 2022 with new bars, drink specials, expanded merchandise and with even more of friends - old and new - coming from far and wide to wear Hawiian shirts and bucket hats, drink way too much and have an all around fantastic time.</p>
-							<p>2023 will mark the 5-year extravaganza of what has quickly become a staple in northern Virginia and a boon to the local economy. We can’t wait to celebrate the biggest, baddest, best JUNEFEST to date with you on June 17!</p> -->
 							<p>A layout of our journey. Courthaus Social, Pinemoor, Pamplona, and the Lot. Many begin the trek, but few finish. Click on these locations on the map to check out their menus and plan your attack. Will you be among the few?</p>
 						</header>
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1330 812">
+							<image width="1330" height="812" xlink:href="images/barcrawlmap.PNG"></image>
+							<defs>
+							  <radialGradient id="RadialGradient1">
+								<stop offset="80%" stop-color="white" />
+								<stop offset="100%" stop-color="green" />
+							  </radialGradient>
+							</defs>
+							<a xlink:href="https://www.courthaussocial.com/"><rect class="location Courthaus clearfix" x="1158" y="23" fill="url(#RadialGradient1)" opacity="0.5" width="155" height="50"></rect></a> 
+							<a xlink:href="https://www.thepinemoor.com/"><rect class="location" x="375" y="513" fill="url(#RadialGradient1)" opacity="0.5" width="113" height="50"></rect></a>
+							<a xlink:href="https://pamplonava.com/"><rect class="location" x="274" y="515" fill="url(#RadialGradient1)" opacity="0.5" width="85" height="50"></rect></a>
+							<a xlink:href="https://thelotva.com/"><rect class="location" x="44" y="736" fill="url(#RadialGradient1)" opacity="0.5" width="94" height="50"></rect></a>
+						  </svg>
 					</article>
 
 				</div>

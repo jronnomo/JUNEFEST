@@ -240,7 +240,6 @@ hr:after {
 .hidden{
 	display: none;
 }
-
 #main{
 	position: relative;
 	/* z-index: 1; */
@@ -260,13 +259,15 @@ svg{
 .clearfix {
     overflow: auto;
 }
-image#Courthaus{
+/* image#Courthaus{
 	width: 15%;
 	height: 150px;
 	position: absolute;
 	float: right;
-	/* z-index: 2; */
-}
+ */
+/* rect{
+	fill: linear-gradient(to bottom, #f00, #00f)
+} */
 @media screen and (max-width: 1680px) {
 	
 	.container {
@@ -2201,7 +2202,7 @@ image#Courthaus{
 	.wrapper {
 		background: rgb(255, 255, 255);
 		margin: 0 0 2em 0;
-		padding: 6em 0 6em 0;
+		padding: 6em 0 3em 0;
 	}
 
 		.wrapper.style2 {
@@ -2705,7 +2706,7 @@ image#Courthaus{
 
 				.carousel article {
 					width: 18em;
-					margin: 0 0 0 0;
+					/* margin: 0 0 0 0; */
 				}
 
 	}
