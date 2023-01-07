@@ -17,6 +17,8 @@
 // 	})
 // }
 // inputCarouselmages()
+const privateApiKey = 'private_GrOyuLAwm73AxBRp0SXDIxRe+Gs=';
+const encodedKey = btoa(privateApiKey + ':');
 
 const API_URL = 'https://api.imagekit.io/v1/files/?name=IMG_0033.JPG&tr=w-288,h-200';
 
@@ -25,7 +27,7 @@ async function fetchImage() {
 	  const response = await fetch(API_URL, {
 		method: 'GET',
 		headers: {
-		  Authorization: 'Basic cHJpdmF0ZV9Hck95dUxBd203M0F4QlJwMFNYREl4UmUrR3M9Og==',
+		  Authorization: `Basic ${encodedKey}`,
 		  'Access-Control-Allow-Origin': 'https://main--sprightly-mermaid-bca16a.netlify.app/',
 		},
 	  });
