@@ -2244,11 +2244,12 @@ image#Courthaus{
 			text-align: center;
 			width: 100%;
 			background-color: rgba(189, 242, 212, .5);
+			color: #ffa331;
 		}
 		.countdown > *{
 			width: 15%;
 			display: inline;
-			color: #0c4f00
+			color: #ffa331
 		}
 
 			#header header > p {
