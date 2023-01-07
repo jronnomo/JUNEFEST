@@ -2243,13 +2243,14 @@ image#Courthaus{
 		.countdown{
 			text-align: center;
 			width: 100%;
-			background-color: rgba(189, 242, 212, .5);
-			color: #ffa331;
+			background: linear-gradient(rgba(255, 255, 255, 0), rgba(189, 242, 212, 1));
+			/* background-color: rgba(189, 242, 212, .5); */
+			color: #0c4f00;
 		}
 		.countdown > *{
 			width: 15%;
 			display: inline;
-			color: #ffa331
+			color: #0c4f00;
 		}
 
 			#header header > p {
