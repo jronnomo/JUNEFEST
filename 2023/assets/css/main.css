@@ -259,15 +259,31 @@ svg{
 .clearfix {
     overflow: auto;
 }
-/* image#Courthaus{
-	width: 15%;
-	height: 150px;
-	position: absolute;
-	float: right;
- */
-/* rect{
-	fill: linear-gradient(to bottom, #f00, #00f)
-} */
+
+#features{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+section.featured{
+	padding: 0 8%;
+}
+section.featured p{
+	display: inline-flex;
+}
+section.featured > .image{
+	width: 300px;
+    height: 365px;
+}
+section.featured.lastrow{
+	align-self: center !important;
+}
+section.featured.lastrow > .image{
+	width: 300px;
+}
+
+
+
 @media screen and (max-width: 1680px) {
 	
 	.container {
@@ -2520,13 +2536,13 @@ svg{
 	#footer {
 		position: relative;
 		overflow: hidden;
-		padding: 6em 0 6em 0;
-		background: #32964d;
-		color: #fff;
+		padding: 2em 0 0 0;
+		background: #dcfeed;
+		color: black;
 	}
 
 		#footer .icon.circled {
-			background: #fff;
+			background: black;
 			color: #2b252c;
 		}
 
@@ -2536,7 +2552,7 @@ svg{
 		}
 
 		#footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
-			color: #fff;
+			color: black;
 		}
 
 		#footer .contact {
@@ -2545,7 +2561,6 @@ svg{
 
 			#footer .contact p {
 				text-align: center;
-				margin: 0 0 3em 0;
 			}
 
 		#footer .copyright {
