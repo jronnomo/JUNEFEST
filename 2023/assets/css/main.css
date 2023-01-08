@@ -2724,6 +2724,12 @@ section.featured.lastrow > .image{
 					/* margin: 0 0 0 0; */
 				}
 
+				#logo img{
+					width: 65%;
+					margin: 0;
+
+				}
+
 	}
 
 /* Normal */
@@ -2749,12 +2755,17 @@ section.featured.lastrow > .image{
 			#header {
 				background-attachment: scroll;
 			}
+			#logo img{
+				width: 300px;
+
+			}
 
 				#header .inner {
 					padding-left: 2em;
 					padding-right: 2em;
 				}
 
+			
 		/* Banner */
 
 			#banner {
