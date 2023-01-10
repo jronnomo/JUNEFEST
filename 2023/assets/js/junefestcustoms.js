@@ -90,7 +90,7 @@ function zoomIn(click){
 // };
 
 // COUNTDOWN
-let juneFestDate = new Date('June 17, 2023 12:30:00').getTime()
+let juneFestDate = new Date('June 17, 2023 12:30PM').getTime()
 let currentDate = new Date()
 var countDownTimer = setInterval(function(){
 	var now = new Date().getTime();
