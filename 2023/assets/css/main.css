@@ -275,12 +275,6 @@ section.featured > .image{
 	width: 300px;
     height: 365px;
 }
-section.featured.lastrow{
-	align-self: center !important;
-}
-section.featured.lastrow > .image{
-	width: 300px;
-}
 
 
 
