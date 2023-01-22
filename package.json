@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node": "^19.4.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "junefest",
+  "description": "Junefest Website",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jronnomo/JUNEFEST.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jronnomo/JUNEFEST/issues"
+  },
+  "homepage": "https://github.com/jronnomo/JUNEFEST#readme"
+}
