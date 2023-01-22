@@ -12,8 +12,8 @@ app.get('/', (req, res) => {
 app.put('/', (req, res) => {
     fetch('https://api.imagekit.io/v1/files/?name=IMG_0033.JPG&tr=w-288,h-200', {
         headers: {Authorization: `Basic cHJpdmF0ZV9Hck95dUxBd203M0F4QlJwMFNYREl4UmUrR3M9Og==`,
-                  'Access-Control-Allow-Origin': 'https://63cda247fe08a6040e61647b--amazing-toffee-79c837.netlify.app/',
-                  'Origin': 'https://63cda247fe08a6040e61647b--amazing-toffee-79c837.netlify.app/',
+                  'Access-Control-Allow-Origin': '*',
+                  'Origin': '*',
                   'Access-Control-Request-Method': 'GET',
                   'Access-Control-Allow-Credentials': 'true'},
       })
