@@ -4,6 +4,7 @@ const cors = require('cors')
 const PORT = process.env.PORT || 8000
 
 app.use(cors())
+app.options('*', cors());
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname+'/2023', 'index.html')
@@ -19,10 +20,16 @@ app.put('/', (req, res) => {
     .then(res => res.json())
     .then(data => {
         console.log(data)
-        document.querySelector('#firstPic').src = data.url
+        if(data.url){
+            res.status(200).send({message: 'Image updated successfully'});
+            document.querySelector('#firstPic').src = data.url
+        }else{
+            res.status(404).send({message: 'Image not found'});
+        }
     })
     .catch(err => {
         console.log(`Error is ${err}`)
+        res.status(500).send({message: 'Error while fetching image'});
     })
 });
 app.listen(PORT, () => console.log(`Server running on ${PORT}`))
