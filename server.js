@@ -9,7 +9,8 @@ app.options('*', cors());
 app.get('/', (req, res) => {
     res.sendFile(__dirname+'/2023', 'index.html')
 })
-app.put('/', (req, res) => {
+app.put('/updateImages', (req, res) => {
+    console.log(req)
     fetch('https://api.imagekit.io/v1/files/?name=IMG_0033.JPG&tr=w-288,h-200', {
         headers: {Authorization: `Basic cHJpdmF0ZV9Hck95dUxBd203M0F4QlJwMFNYREl4UmUrR3M9Og==`,
                   'Access-Control-Allow-Origin': '*',

@@ -1,23 +1,22 @@
 // Photos from imagekit
-document.addEventListener("DOMContentLoaded", inputCarouselmages);
 
-function inputCarouselmages(){
-	fetch('https://api.imagekit.io/v1/files/?name=IMG_0033.JPG&tr=w-288,h-200', {
-		headers: {Authorization: `Basic cHJpdmF0ZV9Hck95dUxBd203M0F4QlJwMFNYREl4UmUrR3M9Og==`,
-				  'Access-Control-Allow-Origin': '*',
-				  'Origin': '*',
-				  'Access-Control-Request-Method': 'GET',
-				  'Access-Control-Allow-Credentials': 'true'},
-	  })
-	.then(res => res.json())
+//maybe how we get whole carousel to random
+//Array.from(carousel).forEach((element) => {
+//    element.addEventListener("DOMContentLoaded", inputCarouselmages)
+//})
+
+document.addEventListener('DOMContentLoaded', () => {
+	fetch('updateImages', {
+	  method: 'PUT',
+	  body: JSON.stringify({ numImages: 10 })
+	})
+	.then(response => response.json())
 	.then(data => {
-		console.log(data)
-		document.querySelector('#firstPic').src = data.url
+	  // data will be an array of 10 random images from the repository
+	  // you can then use this data to update your page with the new images
 	})
-	.catch(err => {
-		console.log(`Error is ${err}`)
-	})
-}
+	.catch(error => console.error('Error:', error));
+  });
 
 
 // function testAPI(){
