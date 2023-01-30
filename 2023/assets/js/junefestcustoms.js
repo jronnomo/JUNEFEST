@@ -4,7 +4,7 @@
 //Array.from(carousel).forEach((element) => {
 //    element.addEventListener("DOMContentLoaded", inputCarouselmages)
 //})
-//Thinking that the actual API should be in server.js and not here.
+//Thinking that the actual API should be in server.js and not here
 document.addEventListener('DOMContentLoaded', () => {
 	fetch('updateImages', {
 	  method: 'PUT',
