@@ -2003,7 +2003,8 @@ section.featured > .image{
 		display: block;
 		border: 0;
 		background: #fafafa;
-		width: 100%;
+		margin: auto;
+		width: 70%;
 		border-radius: 0.5em;
 		border: solid 1px #E5E5E5;
 		padding: 1em;
@@ -2472,6 +2473,8 @@ section.featured > .image{
 /* Banner */
 
 	#banner {
+		display: flex;
+		flex-direction: column;
 		font-family: 'Inika', sans-serif;
 		background: rgb(255, 255, 255);
 		text-align: center;
@@ -2483,9 +2486,15 @@ section.featured > .image{
 	}
 	#banner img{
 		width: 100%;
+		padding: 5% 0 0 0;
+		margin: auto
+	}
+	#banner img#invitationalPic{
+		width: 70%;
 		padding: 5% 0 0 0 ;
 	}
 	#banner h1{
+		margin-top: 5%;
 		font-size: 2em;
 	}
 
@@ -2935,7 +2944,8 @@ section.featured > .image{
 				display: block;
 				padding: 0;
 				line-height: 3em;
-				width: 100%;
+				width: 70%;
+				margin: auto;
 			}
 
 		/* Nav */
