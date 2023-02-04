@@ -2364,7 +2364,7 @@ section.featured > .image{
 		}
 		#navlogo{
 			display: inline-block;
-			width: 15%;
+			width: 10%;
 		}
 
 			#nav > ul:before, #nav > ul:after {
@@ -2497,7 +2497,9 @@ section.featured > .image{
 		margin-top: 5%;
 		font-size: 2em;
 	}
-
+	#banner.green{
+		background-color:#dcfeed
+	}
 /* Content */
 
 	#content > hr {

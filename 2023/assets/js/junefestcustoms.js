@@ -17,7 +17,7 @@
 // 	})
 // }
 // inputCarouselmages()
-
+// TODO Fetch Images from API
 async function listAlbumItems() {
 	// Replace YOUR_ACCESS_TOKEN with your actual access token
 	const accessToken = 'YOUR_ACCESS_TOKEN';
