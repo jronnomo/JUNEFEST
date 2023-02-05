@@ -1992,6 +1992,9 @@ section.featured > .image{
 					color: #ef8376;
 				}
 
+				#signup{
+					color: #df7366
+				}
 /* Form */
 
 	form label {
@@ -2315,6 +2318,7 @@ section.featured > .image{
 			text-align: center;
 			font-size: 1.25em;
 			padding: 0;
+			margin-top: 5%;
 		}
 
 		#header hr {
