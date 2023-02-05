@@ -119,12 +119,14 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.25em;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h2 a, h3 a, h4 a, h5 a, h6 a {
 	color: inherit;
 	text-decoration: none;
 	border-bottom-color: transparent;
 }
-
+h1 a{
+	color: #df7366
+}
 h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
 	font-weight: 600;
 }
@@ -1993,6 +1995,7 @@ section.featured > .image{
 				}
 
 				#signup{
+					background-color: rgba(220, 254, 237, .75);
 					color: #df7366
 				}
 /* Form */
@@ -2274,13 +2277,22 @@ section.featured > .image{
 		#flexSection{
 			display: flex;
 			justify-content: space-around;
-			padding-top: 5%;
 			flex-wrap: wrap;
 		}
-		#flexSection img{
+		#flexSection section{
 			width: 300px;
-			padding: 20px;
+			height: 365px;
+			text-align: center;
 		}
+		#flexSection section img{
+			width: 300px;
+			height: 365px;
+		}
+		#flexSection #flexh2{
+			width: 300px;
+			height: 150px;
+		}
+		
 		.countdown{
 			text-align: center;
 			width: 100%;
@@ -2778,6 +2790,12 @@ section.featured > .image{
 
 				}
 
+		/* Sponsors Apparel*/
+
+		/* #flexh2{
+			margin: 0 0;
+		} */
+
 	}
 
 /* Normal */
@@ -3183,7 +3201,7 @@ section.featured > .image{
 		/* Wrapper */
 
 			.wrapper {
-				padding: 3em 1em 3em 1em;
+				padding: 0em 1em 3em 1em;
 			}
 
 		/* Header */
@@ -3250,6 +3268,25 @@ section.featured > .image{
 
 			#main > header {
 				text-align: center;
+			}
+
+			#flexSection{
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+			}
+			#flexSection section{
+				width: 300px;
+				height: 365px;
+				text-align: center;
+			}
+			#flexSection section img{
+				width: 300px;
+				height: 365px;
+			}
+			#flexSection #flexh2{
+				width: 300px;
+				height: 150px;
 			}
 
 		/* Footer */
