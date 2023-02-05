@@ -1998,7 +1998,7 @@ section.featured > .image{
 		display: block;
 		font-weight: 400;
 		color: #483949;
-		margin: 0 0 1em 0;
+		margin: 1em 0 0 0;
 	}
 
 	form input[type="text"],
