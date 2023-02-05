@@ -2504,6 +2504,9 @@ section.featured > .image{
 		margin-top: 5%;
 		font-size: 2em;
 	}
+	#banner h1#apparelHeader{
+		margin: 0 0 5% 0;
+	}
 	#banner.green{
 		background-color:#dcfeed
 	}
