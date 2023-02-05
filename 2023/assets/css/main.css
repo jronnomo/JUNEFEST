@@ -72,6 +72,9 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+input{
+	margin-top: 1%;
+}
 
 /* Basic */
 
@@ -162,6 +165,7 @@ a:hover {
 	color: #ef8376;
 	border-bottom-color: transparent;
 }
+
 
 sub {
 	position: relative;
@@ -275,7 +279,9 @@ section.featured > .image{
 	width: 300px;
     height: 365px;
 }
-
+#sponsorThanks{
+	margin: auto;
+}
 
 
 
@@ -2221,6 +2227,10 @@ section.featured > .image{
 			padding-top: 4%;
 		}
 
+		.wrapper section{
+			margin: 2% auto;
+			padding: 0 2% 0 2%;
+		}
 /* Header */
 
 	#header {
@@ -2258,7 +2268,14 @@ section.featured > .image{
 		#header .apparelLogo{
 			width: 25%;
 		}
-
+		#flexSection{
+			display: flex;
+			justify-content: space-around;
+			padding-top: 5%;
+		}
+		#flexSection img{
+			width: 20%;
+		}
 		.countdown{
 			text-align: center;
 			width: 100%;
@@ -2424,6 +2441,9 @@ section.featured > .image{
 					display: none;
 				}
 
+				#nav a:hover {
+					color: #ef8376;
+				}
 	.dropotron {
 		background: rgba(255, 255, 255, 0.975);
 		padding: 1em 1.25em 1em 1.25em;
@@ -2501,14 +2521,18 @@ section.featured > .image{
 		padding: 5% 0 0 0 ;
 	}
 	#banner h1{
-		margin-top: 5%;
+
 		font-size: 2em;
 	}
-	#banner h1#apparelHeader{
+	#banner p#apparelHeader{
 		margin: 0 0 5% 0;
+
 	}
 	#banner.green{
 		background-color:#dcfeed
+	}
+	#banner #golfGroup{
+		width: 70%;
 	}
 /* Content */
 
@@ -2578,6 +2602,9 @@ section.featured > .image{
 				text-align: center;
 			}
 
+		#footer #suppPage{
+			margin-top: 1%;
+		}
 		#footer .copyright {
 			text-align: center;
 			color: rgba(128, 128, 128, 0.75);
@@ -3092,6 +3119,9 @@ section.featured > .image{
 					#navPanel .link.depth-0 {
 						color: rgb(55, 156, 86);
 						font-weight: 600;
+					}
+					#navPanel .link.depth-0:hover {
+						color: #ef8376;
 					}
 
 				#navPanel .indent-1 {
