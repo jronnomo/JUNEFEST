@@ -278,6 +278,7 @@ section.featured > .image{
 
 
 
+
 @media screen and (max-width: 1680px) {
 	
 	.container {
@@ -2233,13 +2234,13 @@ section.featured > .image{
 		padding: 7.5em 0 2em 0;
 		cursor: default;
 	}
-
-		#header:before {
+/* TODO disregard only for apparel page*/
+		/* #header:before {
 			content: '';
 			display: inline-block;
 			vertical-align: middle;
 			height: 100%;
-		}
+		} */
 
 		#header .inner {
 			position: relative;
@@ -2249,9 +2250,15 @@ section.featured > .image{
 			vertical-align: middle;
 		}
 
-		#header header {
-			display: inline-block;
+		#header {
+			display: flex;
+			align-items:center;
+			justify-content: space-around;
 		}
+		#header .apparelLogo{
+			width: 25%;
+		}
+
 		.countdown{
 			text-align: center;
 			width: 100%;
@@ -2307,7 +2314,7 @@ section.featured > .image{
 		}
 
 	body.homepage #header {
-		height: 100vh;
+		/* height: 100vh; */
 		min-height: 40em;
 	}
 
