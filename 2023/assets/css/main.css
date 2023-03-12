@@ -310,9 +310,10 @@ section.center h2>a{
 .barSection section img{
 	width: 40%;
 	margin-bottom: 5%;
+	margin: 0 auto 5% auto;
 }
 #horizontalPhoto{
-	width: 60%;
+	width: 90%;
 }
 
 @media screen and (max-width: 1680px) {
@@ -1579,6 +1580,12 @@ section.center h2>a{
 		}
 
 		@media screen and (max-width: 736px) {
+
+			.barSection section img{
+				width: 90%;
+				margin-bottom: 5%;
+				margin: 0 auto 5% auto;
+			}
 
 			.row {
 				display: flex;
