@@ -2923,7 +2923,7 @@ section.center h2>a{
 		/* Footer */
 
 			#footer {
-				padding: 4em 2em 4em 2em;
+				padding: 0 2em 4em 2em;
 			}
 
 		/* Carousel */
@@ -2988,7 +2988,7 @@ section.center h2>a{
 			}
 
 				section:last-child, article:last-child {
-					margin-bottom: 0;
+					margin-bottom: 10%;
 				}
 
 			.row > section, .row > article {
@@ -3349,7 +3349,7 @@ section.center h2>a{
 				height: 365px;
 			}
 			.flexSection section img#SP{
-				height: 285px !important;
+				height: 285px;
 			}
 			.flexSection #flexh2{
 				width: 300px;
