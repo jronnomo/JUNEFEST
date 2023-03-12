@@ -2303,13 +2303,6 @@ section.center h2>a{
 		font-size: 4em;
 		color: #ffa331;
 	}
-/* TODO disregard only for apparel page*/
-		/* #header:before {
-			content: '';
-			display: inline-block;
-			vertical-align: middle;
-			height: 100%;
-		} */
 
 		#header .inner {
 			position: relative;
@@ -2953,17 +2946,14 @@ section.center h2>a{
 	}
 
 	@media screen and (max-width: 736px) {
-		/* section.center h2{
-			width: 100% !important;
-			display: flex;
-			padding-top: 10%;
-			font-size: 2rem;
-			justify-items: center;
+
+		#barHeader {
+			position: relative;
+			background-image: url("../../images/leaves-small.jpg");
+			background-size: cover;
+			background-attachment: local;
 		}
-		section.center h2>a{
-			font-size: 2rem;
-			height: 100px;
-		} */
+
 		/* Basic */
 
 			html, body {
