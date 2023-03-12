@@ -136,7 +136,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.25em;
+	font-size: 2em;
 }
 
 h4 {
@@ -285,7 +285,35 @@ section.featured > .image{
 	margin: auto;
 }
 
+/* Sponsors Apparel*/
 
+section.center h2{
+	display: flex;
+	font-size: 2rem;
+	justify-content: center;
+	height: 100px;
+	text-align: center;
+}
+section.center h2>a{
+	font-size: 4rem;
+}
+
+/* .barSection{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+} */
+.barSection *{
+	display: flex;
+	flex-direction: column;
+}
+.barSection section img{
+	width: 40%;
+	margin-bottom: 5%;
+}
+#horizontalPhoto{
+	width: 60%;
+}
 
 @media screen and (max-width: 1680px) {
 	
@@ -2228,7 +2256,9 @@ section.featured > .image{
 		margin: 0 0 2em 0;
 		padding: 6em 0 3em 0;
 	}
-
+	.wrapper#apparelSection {
+		padding: 3em 2em 0 1em;
+	}
 		.wrapper.style2 {
 			padding-top: 4%;
 		}
@@ -2249,6 +2279,22 @@ section.featured > .image{
 		text-align: center;
 		padding: 7.5em 0 2em 0;
 		cursor: default;
+	}
+
+	#barHeader {
+		position: relative;
+		background-image: url("../../images/leaves-small.jpg");
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: rgb(0, 0, 0);
+		text-align: center;
+		padding: 7.5em 0 2em 0;
+		cursor: default;
+	}
+	#barHeader h1{
+		font-size: 4em;
+		color: #ffa331;
 	}
 /* TODO disregard only for apparel page*/
 		/* #header:before {
@@ -2274,23 +2320,33 @@ section.featured > .image{
 		#header .apparelLogo{
 			width: 25%;
 		}
-		#flexSection{
+		.flexSection{
 			display: flex;
 			justify-content: space-around;
 			flex-wrap: wrap;
+			align-items: flex-start;
 		}
-		#flexSection section{
+		.flexSection section{
 			width: 300px;
 			height: 365px;
+		}
+		.flexSection section img{
+			width: 250px;
+			height: 250px;
+		}
+		.flexSection section img#sponsorImg{
+			width: 300px;
+			height: 365px;
+		}
+		.flexSection section#sponsorSection{
+			margin-top: 0;
+		}
+		.flexSection #flexh2{
+			flex-grow: 1;
+		}
+		section.center h2>a{
+			font-size: 3rem;
 			text-align: center;
-		}
-		#flexSection section img{
-			width: 300px;
-			height: 365px;
-		}
-		#flexSection #flexh2{
-			width: 300px;
-			height: 150px;
 		}
 		
 		.countdown{
@@ -2790,12 +2846,6 @@ section.featured > .image{
 
 				}
 
-		/* Sponsors Apparel*/
-
-		/* #flexh2{
-			margin: 0 0;
-		} */
-
 	}
 
 /* Normal */
@@ -2896,7 +2946,17 @@ section.featured > .image{
 	}
 
 	@media screen and (max-width: 736px) {
-
+		/* section.center h2{
+			width: 100% !important;
+			display: flex;
+			padding-top: 10%;
+			font-size: 2rem;
+			justify-items: center;
+		}
+		section.center h2>a{
+			font-size: 2rem;
+			height: 100px;
+		} */
 		/* Basic */
 
 			html, body {
@@ -3270,21 +3330,25 @@ section.featured > .image{
 				text-align: center;
 			}
 
-			#flexSection{
+			.flexSection{
 				display: flex;
 				flex-direction: column;
 				flex-wrap: wrap;
+				justify-content: center;
 			}
-			#flexSection section{
+			.flexSection section{
 				width: 300px;
 				height: 365px;
 				text-align: center;
 			}
-			#flexSection section img{
+			#orderHere *{
+				line-height: 1;
+			}
+			.flexSection section img{
 				width: 300px;
 				height: 365px;
 			}
-			#flexSection #flexh2{
+			.flexSection #flexh2{
 				width: 300px;
 				height: 150px;
 			}
