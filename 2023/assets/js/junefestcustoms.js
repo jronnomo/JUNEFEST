@@ -107,7 +107,7 @@ var countDownTimer = setInterval(function(){
     document.getElementById("secs").innerHTML = seconds + "s "
 	// Display the message when countdown is over
 	if (timeleft < 0) {
-		clearInterval(myfunc);
+		clearInterval(countDownTimer);
 		document.getElementById("days").innerHTML = ""
 		document.getElementById("hours").innerHTML = "" 
 		document.getElementById("mins").innerHTML = ""
