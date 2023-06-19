@@ -112,6 +112,6 @@ var countDownTimer = setInterval(function(){
 		document.getElementById("hours").innerHTML = "" 
 		document.getElementById("mins").innerHTML = ""
 		document.getElementById("secs").innerHTML = ""
-		document.getElementById("end").innerHTML = "LET'S GOOO!!";
+		document.getElementById("end").innerHTML = "See you 2024!";
 	}
 }, 1000)
